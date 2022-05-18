@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple calculator</title>
+</head>
+<body>
+    <main>
+        <div class="calculator">
+            <div class="output">
+                <div class="previous-operand" data-previous-operand></div>
+                <div class="current-operand" data-current-operand></div>
+            </div>
+            <form class="controls">
+                <!-- Numeric Keys -->
+                <div class="keys">
+                    <button class="clear" data-all-clear>AC</button>
+                    <button class="delete" data-delete>Del</button>
+                    <button value="1" class="numeric-key" data-number>1</button>
+                    <button value="2" class="numeric-key" data-number>2</button>
+                    <button value="3" class="numeric-key" data-number>3</button>
+                    <button value="4" class="numeric-key" data-number>4</button>
+                    <button value="5" class="numeric-key" data-number>5</button>
+                    <button value="6" class="numeric-key" data-number>6</button>
+                    <button value="7" class="numeric-key" data-number>7</button>
+                    <button value="8" class="numeric-key" data-number>8</button>
+                    <button value="9" class="numeric-key" data-number>9</button>
+                    <button value="0" class="numeric-key" data-number>0</button>
+                    <button value="." class="numeric-key" data-number>.</button>
+                    <!-- Operators -->
+                    <button value="/" class="operators" data-operation>
+                        <i class="fas fa-divide"></i>
+                    </button>
+                    <button value="*" class="operators" data-operation>
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <button value="-" class="operators" data-operation>
+                        <i class="fas fa-minus"></i>
+                    </button>
+                    <button value="+" class="operators plus" data-operation>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <button value="=" class="operators equals" data-equals>
+                        <i class="fas fa-equals"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
