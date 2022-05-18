@@ -49,6 +49,7 @@ class Calculator {
             default:
                 return
         }
+        
         this.currentOperand = computation;
         this.operation = undefined;
         this.prevOperand = ''; 
