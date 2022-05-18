@@ -44,8 +44,10 @@ class Calculator {
                 break;
             case '*':
                 computation = prev * current;
+                break;
             case '/':
                 computation = prev / current;
+                break;
             default:
                 return
         }
@@ -64,11 +66,10 @@ class Calculator {
             integerDisplay = ''
         } else {
             integerDisplay = integerDigits.toLocaleString('en', {
-                maximumFractionDigits: 0
-            })
+                maximumFractionDigits: 0})
         }
         if(decimalDigits != null) {
-            return `${integerDisplay}.${decimalDigits}`
+            return `${integerDisplay}.${decimalDigits}`;
         } else {
             return integerDisplay;
         }
